@@ -81,6 +81,10 @@ admin
 ![](https://i.imgur.com/E8CBKNn.png)
 Cerate
 ![](https://i.imgur.com/n67pf9H.png)
+iphone
+![](https://i.imgur.com/Sm5zCNU.png)
+Tablet
+![](https://i.imgur.com/0q8zVry.png)
 
 
 

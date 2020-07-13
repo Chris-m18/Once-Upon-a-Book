@@ -68,7 +68,7 @@ _The **Project Title** MVP lorem ipsum dolor sit amet, consectetur adipiscing el
 
 > Use the Wireframes section to display desktop, tablet and mobile views. No hand-drawn wireframes. Use a tool like wireframe.cc, Whimsical or AdobeXD
 
-![Dummy Link](<iframe style="border:none" width="800" height="450" src="https://whimsical.com/embed/QaX9gH3sJZAxda8S7HBKsB"></iframe>)
+![]https://i.imgur.com/Qi6JhFw.png
 
 
 #### Component Tree

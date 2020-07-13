@@ -175,7 +175,7 @@ src
 
 #### ERD Model
 
-![](https://i.imgur.com/Buv0cRn.png)
+![](https://i.imgur.com/zBSki3M.png)
 
 <br>
 

@@ -71,7 +71,7 @@ Home
 Category
 ![](https://i.imgur.com/SGiEFai.png)
 Details
-![]https://i.imgur.com/j4PS9k0.png)
+![](https://i.imgur.com/j4PS9k0.png)
 Log-in
 ![](https://i.imgur.com/IHsHdA9.png)
 Signup
@@ -177,7 +177,7 @@ src
 
 #### ERD Model
 
-![](https://i.imgur.com/02TWXZe.png)
+![](https://i.imgur.com/Buv0cRn.png)
 
 <br>
 

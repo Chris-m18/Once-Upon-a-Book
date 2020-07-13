@@ -54,9 +54,10 @@ _The **Once Upon a Book** MVP is to have a fully functioning app, Using a fully 
 | :--------------: | :----------------------------------------- |
 |      React       | _Front end user interface._ |
 |   React Router   | _routing to all appropriate places.     ._ |
-|.                 | _Lorem ipsum dolor sit amet, consectetur._ |
-|                  | _Lorem ipsum dolor sit amet, consectetur._ |
-|                  | _Lorem ipsum dolor sit amet, consectetur._ |
+|   axios          | _api call._ |
+|   ruby           | _for my backend._ |
+|   rails          | _seed and schema._ |
+|   flexbox        | _flexbox css ._ |
 
 <br>
 
@@ -70,17 +71,16 @@ Home
 Category
 ![](https://i.imgur.com/SGiEFai.png)
 Details
-![](https://i.imgur.com/YYaIsqU.png)
+![]https://i.imgur.com/j4PS9k0.png)
 Log-in
 ![](https://i.imgur.com/IHsHdA9.png)
 Signup
 ![](https://i.imgur.com/B94KZoL.png)
 User
 ![](https://i.imgur.com/jZ6HHTK.png)
-admin
-![](https://i.imgur.com/E8CBKNn.png)
+
 Cerate
-![](https://i.imgur.com/n67pf9H.png)
+![](https://i.imgur.com/kJgsEDZ.png)
 
 iphone
 ![](https://i.imgur.com/Sm5zCNU.png)
@@ -185,7 +185,10 @@ src
 
 ## Post-MVP
 
-> Use this section to document ideas you've had that would be fun (or necessary) for your Post-MVP. This will be helpful when you return to your project after graduation!
+admin
+![](https://i.imgur.com/E8CBKNn.png)
+Details
+![](https://i.imgur.com/YYaIsqU.png)
 
 ***
 

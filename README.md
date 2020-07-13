@@ -67,7 +67,7 @@ _The **Once Upon a Book** MVP is to have a fully functioning app, Using a fully 
 
 > Use the Wireframes section to display desktop, tablet and mobile views. No hand-drawn wireframes. Use a tool like wireframe.cc, Whimsical or AdobeXD
 Home
-![](https://i.imgur.com/Qi6JhFw.png)
+![](https://i.imgur.com/y1pDt8r.png)
 Category
 ![](https://i.imgur.com/SGiEFai.png)
 Details

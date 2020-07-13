@@ -34,17 +34,15 @@
 > functioning front end 
 > the use of grid or flex box 
 
-_The **Project Title** MVP lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dapibus fermentum risus vitae bibendum. Integer vel ipsum mollis odio sollicitudin ornare eu vel ex. In quis fringilla velit, ac maximus quam. Etiam eget placerat neque. Aenean faucibus sem non nisi lobortis ullamcorper._
+_The **Once Upon a Book** MVP is to have a fully functioning app, Using a fully bulid backend and front end._
 
 <br>
 
 ### Goals
 
-- _Lorem ipsum, dolor sit amet,_
-- _consectetur adipiscing elit._
-- _Phasellus dapibus fermentum risus vitae bibendum._
-- _Integer vel ipsum mollis odio sollicitudin ornare eu vel ex._
-- _etc._
+- _Getting a good amount of info in page,_
+- _using new react techniques._
+- _styling with basic css or scass._
 
 <br>
 
@@ -54,11 +52,11 @@ _The **Project Title** MVP lorem ipsum dolor sit amet, consectetur adipiscing el
 
 |     Library      | Description                                |
 | :--------------: | :----------------------------------------- |
-|      React       | _Lorem ipsum dolor sit amet, consectetur._ |
-|   React Router   | _Lorem ipsum dolor sit amet, consectetur._ |
-| React SemanticUI | _Lorem ipsum dolor sit amet, consectetur._ |
-|     Express      | _Lorem ipsum dolor sit amet, consectetur._ |
-|  Express Router  | _Lorem ipsum dolor sit amet, consectetur._ |
+|      React       | _Front end user interface._ |
+|   React Router   | _routing to all appropriate places.     ._ |
+|.                 | _Lorem ipsum dolor sit amet, consectetur._ |
+|                  | _Lorem ipsum dolor sit amet, consectetur._ |
+|                  | _Lorem ipsum dolor sit amet, consectetur._ |
 
 <br>
 
@@ -67,8 +65,23 @@ _The **Project Title** MVP lorem ipsum dolor sit amet, consectetur adipiscing el
 #### Wireframes
 
 > Use the Wireframes section to display desktop, tablet and mobile views. No hand-drawn wireframes. Use a tool like wireframe.cc, Whimsical or AdobeXD
+Home
+![](https://i.imgur.com/Qi6JhFw.png)
+Category
+![](https://i.imgur.com/SGiEFai.png)
+Details
+![](https://i.imgur.com/YYaIsqU.png)
+Log-in
+![](https://i.imgur.com/IHsHdA9.png)
+Signup
+![](https://i.imgur.com/B94KZoL.png)
+User
+![](https://i.imgur.com/jZ6HHTK.png)
+admin
+![](https://i.imgur.com/E8CBKNn.png)
+Cerate
+![](https://i.imgur.com/n67pf9H.png)
 
-![]https://i.imgur.com/Qi6JhFw.png
 
 
 #### Component Tree
@@ -92,7 +105,12 @@ src
       |__ Home.jsx
       |__ Details.jsk
       |__ Signin.jsx
-      |__ Re
+      |__ Register.jsx
+      |__ Admindetails.jsx
+      |__ Create.jsx
+      |__ UserPage.jsx
+      |__ Category.jsx
+      
 |__ services/
 
 ```
@@ -101,13 +119,19 @@ src
 
 > Use this section to go into further depth regarding your components, including breaking down the components as stateless or stateful, and considering the passing of data between those components.
 
-|  Component   |    Type    | state | props | Description                                                      |
-| :----------: | :--------: | :---: | :---: | :--------------------------------------------------------------- |
-|    Header    | functional |   n   |   n   | _The header will contain the navigation and logo._               |
-|  Navigation  | functional |   n   |   n   | _The navigation will provide a link to each of the pages._       |
-|   Gallery    |   class    |   y   |   n   | _The gallery will render the posts using cards in flexbox._      |
-| Gallery Card | functional |   n   |   y   | _The cards will render the post info via props._                 |
-|    Footer    | functional |   n   |   n   | _The footer will show info about me and a link to my portfolio._ |
+|  Component   |    Type    | state | props | Description                                                          |
+| :----------: | :--------: | :---: | :---: | :---------------------------------------------------------------     |
+|    Header    | functional |   n   |   n   | _The header will contain the Links,  signin and logo._               |
+|    Home      | functional |   n   |   n   | _The home page will contain a slide show and links to top 20 books._ |
+|    Category  |   class    |   y   |   n   | _The gallery will render the Books using flexbox._                   |
+|    Details   | functional |   n   |   y   | _the page will render info about the book._                          |
+|    Signin    | functional |   n   |   n   | _The Signin page is for current users to signin to site._            |
+|    Register  | functional |   n   |   n   | _The Register page is for new users to join  to site._               |
+|Admindetails  | functional |   n   |   n   | _The admin page is for the admin to edit and delete books._          |
+|    Create    | functional |   n   |   n   | _The create page is for users to submit there favs to site._         |
+|    Userpage  | functional |   n   |   n   | _The Userpage holds all of the users favorited books._               |
+
+![](https://i.imgur.com/n4CJiPy.png)
 
 #### Time Estimates
 
@@ -115,9 +139,14 @@ src
 
 | Task                | Priority | Estimated Time | Time Invested | Actual Time |
 | ------------------- | :------: | :------------: | :-----------: | :---------: |
-| Add Contact Form    |    L     |     3 hrs      |     2 hrs     |    3 hrs    |
-| Create CRUD Actions |    H     |     3 hrs      |     1 hrs     |     TBD     |
-| TOTAL               |          |     6 hrs      |     3 hrs     |     TBD     |
+|         AUF         |    L     |     2 hrs      |       hrs     |      hrs    |
+| Create CRUD Actions |    H     |     3 hrs      |       hrs     |     TBD     |
+| Tables              |    H     |     2 hrs      |       hrs     |     TBD     |
+| Shema               |    H     |     4 hrs      |       hrs     |     TBD     |
+|  React              |    H     |     9 hrs      |       hrs     |     TBD     |
+| css                 |    H     |     3 hrs      |       hrs     |     TBD     |
+| deploment           |    H     |     2 hrs      |       hrs     |     TBD     |
+| TOTAL               |          |     31 hrs     |       hrs     |     TBD     |
 
 > _Why is this necessary? Time frames are key to the development cycle. You have limited time to code your app, and your estimates can then be used to evaluate possibilities of your MVP and post-MVP based on time needed. It's best you assume an additional hour for each component, as well as a few hours added to the total time, to play it safe._
 
@@ -127,7 +156,7 @@ src
 
 #### ERD Model
 
-> Use this section to display an image of a computer generated ERD model. You can use draw.io, Lucidchart or another ERD tool.
+![](https://i.imgur.com/02TWXZe.png)
 
 <br>
 

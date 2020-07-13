@@ -99,7 +99,7 @@ iphone
 ![](https://i.imgur.com/7EMB2g1.png)
 
 Tablet
-![](https://i.imgur.com/kKrwnTj.png)
+![](https://i.imgur.com/uFcXBSe.png)
 
 
 

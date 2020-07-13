@@ -30,9 +30,10 @@
 
 ## MVP
 
-> full back end with crud 
-> functioning front end 
-> the use of grid or flex box 
+> user is able to find books
+> user is able to see details on book
+> user is able to favorite books
+> app has differnt breakpoints 
 
 _The **Once Upon a Book** MVP is to have a fully functioning app, Using a fully bulid backend and front end._
 
@@ -86,13 +87,10 @@ iphone
 ![](https://i.imgur.com/Sm5zCNU.png)
 
 iphone
-![](https://i.imgur.com/CKM2tK5.png)
+![](https://i.imgur.com/3oimHzG.png)
 
 iphone
 ![](https://i.imgur.com/2hCs05Y.png)
-
-iphone
-![](https://i.imgur.com/hZ1NwvC.png)
 
 iphone
 ![](https://i.imgur.com/R5o3mPa.png)
@@ -101,7 +99,7 @@ iphone
 ![](https://i.imgur.com/7EMB2g1.png)
 
 Tablet
-![](https://i.imgur.com/KI3o2PI.png)
+![](https://i.imgur.com/kKrwnTj.png)
 
 
 

@@ -1,0 +1,15 @@
+.header{
+  padding: 10px;
+  text-align: center;
+  background: 	rgb(85,130,198);
+  color: white;
+  font-size: 40px;
+  font-family: 'Amatic SC', cursive;
+}
+
+.link{
+  padding: 10;
+  background: rgb(85,130,198);
+text-decoration: none;
+
+}

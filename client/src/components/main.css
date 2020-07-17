@@ -1,0 +1,23 @@
+
+
+.book {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5px;
+  justify-content: space-evenly
+
+}
+
+.pic{
+  width: 300px;
+  height: 300px;
+
+
+}
+
+h3{
+  padding-top: 3em;
+  text-align: center;
+  font-family: 'Amatic SC', cursive;
+  font-size: 40px;
+}

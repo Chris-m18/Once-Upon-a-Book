@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
-import { Link } from 'react-router-dom';
+import { Link, Route } from 'react-router-dom';
+import Register from './Register'
 
 export default class Login extends Component {
   state = {
@@ -19,10 +20,11 @@ export default class Login extends Component {
     const { handleLogin, history } = this.props;
 
     return (
+    
       <form onSubmit={(e) => {
         e.preventDefault();
         handleLogin(this.state);
-        history.push('/')
+  
       }}>
         <h3>Login</h3>
         <label>
@@ -45,9 +47,12 @@ export default class Login extends Component {
           />
         </label>
         <br />
-        <Link to='/register'>Register</Link>
+     
+          <Link to='/register'>Register</Link>
+
         <button>Submit</button>
       </form>
+
     )
   }
 }

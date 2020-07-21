@@ -5,12 +5,20 @@ import './header.css'
 export default function Header() {
   return (<>
     <div className="header">
+      <Link to = './' > 
     <header>Once Upon a Book </header>
+      </Link>
     </div>
     <div className='link'>
-    <Link to='/auth/login'>
+    <Link to='/login'>
         Login/Register
     </Link>
+      <Link to='/category'>
+        Category
+    </Link>
+      <Link to='/add'>
+        Submit your book
+      </Link>
       </div>
       </>
   )

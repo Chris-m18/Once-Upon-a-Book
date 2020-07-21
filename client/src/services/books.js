@@ -15,8 +15,8 @@ export const postBook = async (id, bookData) => {
   return resp.data;
 }
 
-export const putBook= async (id, bookData) => {
-  const resp = await api.put(`/categories/1/books/${id}`, { food: bookData })
+export const putBook = async (id, bookData) => {
+  const resp = await api.put(`/categories/1/books/${id}`, { Book: bookData })
   return resp.data;
 }
 
@@ -25,6 +25,9 @@ export const deleteBook = async (id) => {
   return resp
 }
 
-
+export const getAllCategories = async () => {
+  const resp = await api.get('/categories');
+  return resp.data;
+};
 
 

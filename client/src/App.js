@@ -2,28 +2,30 @@ import './App.css';
 import React, { Component } from 'react'
 import Header from './components/Header'
 import { loginUser, registerUser, removeToken, verifyUser } from './services/auth'
-import { getAllBooks } from './services/books'
+import { getAllBooks, getAllCategories, postBook, deleteBook, putBook } from './services/books'
 import Main from './components/Main'
-import Books from './components/Books'
-import { withRouter, Route, Router } from 'react-router-dom';
-import Login from './components/Login';
+import { withRouter, Route } from 'react-router-dom';
+import ShowAll from './components/ShowAll';
 
 class App extends Component {
   state = {
     currentUser: null,
     books: null,
     get: null,
+    categories: null,
   }
 
 
   componentDidMount() {
     this.handleVerify();
-    this.getBooks()
+    this.getBooks();
+    this.getCategories()
   }
 
   handleLogin = async (userData) => {
     const currentUser = await loginUser(userData);
     this.setState({ currentUser })
+    this.props.history.push('/')
   }
 
   handleRegister = async (userData) => {
@@ -47,28 +49,58 @@ class App extends Component {
 
   getBooks = async () => {
     const books = await getAllBooks()
-    this.setState({ books})
+    this.setState({ books })
   }
-   
 
+
+  handleAdd = async (id, book) => {
+    const newBook = await postBook(id, book)
+    this.setState(prevState => ({
+      books: [...prevState.books, newBook]
+    }))
+    this.props.history.push('/')
+  }
+
+  getCategories = async () => {
+    const categories = await getAllCategories()
+    this.setState({categories})
+  }
+
+
+  handleUpdate = async (id, bookData) => {
+    const newBook = await putBook(id, bookData);
+    this.setState(prevState => ({
+      books: prevState.books.map(book => book.id === parseInt(id) ? newBook : book)
+    }))
+  }
+  handleDelete = async (id) => {
+    const remove  = await deleteBook(id)
+    this.setState({remove})
+
+  } 
 
   render() {
     return (
       <div>
+        
         <Header
           currentUser={this.state.currentUser}
           handleLogout={this.handleLogout}
         />
-        <Route path='/auth/login'  >
-          <Login/>
+        
+        <Route path='/'>
+          <Main
+            
+             handleLogin={this.handleLogin}
+            categories={this.state.categories}
+            handleAdd={this.handleAdd}
+            handleDelete={this.handleDelete}
+            books={this.state.books} />
         </Route>
-     
-        <Main
-          books={this.state.books} />
 
-          <Books />
+        
       </div>
-      
+
     )
   }
 }

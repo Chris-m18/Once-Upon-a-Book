@@ -2,7 +2,6 @@ import React, { Component } from 'react'
 import { withRouter } from 'react-router-dom'
 import { Link } from 'react-router-dom'
 import { getAllBooks } from '../services/books'
-import Header from './Header'
 
 class Category extends Component {
   constructor(props) {

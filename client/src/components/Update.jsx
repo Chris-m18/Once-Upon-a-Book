@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
+import { withRouter } from 'react-router'
 
-export default class Update extends Component {
+class Update extends Component {
   state = {
     title: '',
     author: '',
@@ -10,44 +11,49 @@ export default class Update extends Component {
   }
 
   componentDidMount() {
-    if (this.props.book) {
+    if (this.props.books.length) {
       this.setFormData();
     }
   }
 
   componentDidUpdate(prevProps) {
-    if ( prevProps.book !== this.props.book ) {
+    if ( prevProps.books.length !== this.props.books.length ) {
       this.setFormData();
     }
   }
 
   setFormData = () => {
+    const id = this.props.match.params.id
+    const book = this.props.books.find((book) => book.id === parseInt(id))
+    const {title, author, img_url, description,age, } = book
     this.setState({
-      name: this.props.book.name
+      title, author, img_url, description,age,
     })
   }
 
   handleChange = (e) => {
-    const { value } = e.target;
+    const { name, value } = e.target;
     this.setState({
-      name: value
+      [name]: value
     })
   }
 
   render() {
-    const { handleUpdate, history, id } = this.props;
+    const {  handleUpdate, history } = this.props;
+    const id = this.props.match.params.id
     return (
       <form onSubmit={(e) => {
         e.preventDefault();
-        handleUpdate(id, this.state);
+         handleUpdate(id, this.state);
         history.push('/');
       }}>
         <h3>Edit</h3>
         <label>
           Title:
           <input
-            type='text'
-            value={this.state.book.title}
+            type='text' 
+            name='title'
+            value={this.state.title}
             onChange={this.handleChange}
           />
         </label>
@@ -55,7 +61,8 @@ export default class Update extends Component {
           Author:
           <input
             type='text'
-            value={this.state.book.author}
+            name='author'
+            value={this.state.author}
             onChange={this.handleChange}
           />
         </label>
@@ -63,7 +70,8 @@ export default class Update extends Component {
         Description:
           <input
             type='text'
-            value={this.state.book.description}
+            name='description'
+            value={this.state.description}
             onChange={this.handleChange}
           />
         </label>
@@ -71,7 +79,8 @@ export default class Update extends Component {
           Image:
           <input
             type='text'
-            value={this.state.book.img_url}
+            name='img_url'
+            value={this.state.img_url}
             onChange={this.handleChange}
           />
         </label>
@@ -79,7 +88,8 @@ export default class Update extends Component {
           Age:
           <input
             type='text'
-            value={this.state.book.age}
+            name='age'
+            value={this.state.age}
             onChange={this.handleChange}
           />
         </label>
@@ -88,3 +98,4 @@ export default class Update extends Component {
     )
   }
 }
+export default  withRouter (Update)

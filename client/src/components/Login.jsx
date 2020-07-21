@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
-import { Link, Route } from 'react-router-dom';
-import Register from './Register'
+import { Link } from 'react-router-dom';
+import './Login.css'
+
 
 export default class Login extends Component {
   state = {
@@ -26,6 +27,7 @@ export default class Login extends Component {
         handleLogin(this.state);
   
       }}>
+        
         <h3>Login</h3>
         <label>
           Username:

@@ -16,7 +16,7 @@ export const postBook = async (id, bookData) => {
 }
 
 export const putBook = async (id, bookData) => {
-  const resp = await api.put(`/categories/1/books/${id}`, { Book: bookData })
+  const resp = await api.put(`/categories/1/books/${id}`, { book: bookData })
   return resp.data;
 }
 

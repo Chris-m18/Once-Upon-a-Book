@@ -8,8 +8,15 @@
 }
 
 .link{
+  display:flex;
+  justify-content: space-between;
   padding: 10;
   background: rgb(85,130,198);
-text-decoration: none;
+  text-decoration: none;
 
+}
+
+.login{
+  
+  text-decoration: none;
 }

@@ -10,7 +10,7 @@ import ShowAll from './components/ShowAll';
 class App extends Component {
   state = {
     currentUser: null,
-    books: null,
+    books: [],
     get: null,
     categories: null,
   }
@@ -95,7 +95,9 @@ class App extends Component {
             categories={this.state.categories}
             handleAdd={this.handleAdd}
             handleDelete={this.handleDelete}
-            books={this.state.books} />
+            books={this.state.books}
+            handleUpdate={this.handleUpdate}
+            />
         </Route>
 
         

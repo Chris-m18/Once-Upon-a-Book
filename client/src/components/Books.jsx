@@ -23,7 +23,9 @@ import { Link } from "react-router-dom"
      return (<>
        {this.state.books &&
          <div>
-         <h1>{book.title}</h1>
+         <div className='title'>
+           <h3>{book.title}</h3>
+           </div>
          <h3>By:{book.author}</h3>
          <img src={book.img_url} />
          <h3>{book.description}</h3>

@@ -5,9 +5,9 @@ import Books from './Books'
 import Add from './Add'
 import Category from './Category'
 import Login from './Login'
-
 import './main.css'
 import ShowAll from './ShowAll';
+import Update from './Update';
 
 
 export default class Main extends Component {
@@ -34,6 +34,12 @@ export default class Main extends Component {
 
         <Route path='/books/:id'>
           {<Books handleDelete={this.props.handleDelete} />}
+        </Route>
+
+        <Route path='/book/:id/edit'>
+          <Update books={this.props.books}
+             handleUpdate={this.props. handleUpdate}
+          />
         </Route>
 
         <Route path='/category'>

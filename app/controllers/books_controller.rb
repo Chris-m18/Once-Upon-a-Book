@@ -21,7 +21,7 @@ class BooksController < ApplicationController
 @category = Category.find(params[:category_id])
 @book.category = @category
     if @book.save
-      render json: @book, status: :created, location: @book
+      render json: @book, status: :created
     else
       render json: @book.errors, status: :unprocessable_entity
     end

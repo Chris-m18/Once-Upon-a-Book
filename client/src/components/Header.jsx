@@ -6,20 +6,20 @@ export default function Header() {
   return (<>
     <div className="header">
       
-      <Link to = '/' > 
+      <Link className='head' to = '/' > 
     <header>Once Upon a Book </header>
       </Link>
     </div>
     <div className='link'>
-    <din className='login'>
-    <Link  to='/login'>
+    <div className='Login'>
+    <Link className='log'  to='/login'>
           Login/Register
     </Link>
-    </din>
-      <Link to='/category'>
+    </div>
+      <Link className='cat' to='/category'>
         Category
     </Link>
-      <Link to='/add'>
+      <Link className='add' to='/add'>
         Submit your book
       </Link>
       </div>

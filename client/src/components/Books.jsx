@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { getOneBook } from '../services/books'
 import { withRouter } from 'react-router'
 import { Link } from "react-router-dom"
+import './books.css'
 
 
 
@@ -30,7 +31,7 @@ class Books extends Component {
           <img src={book.img_url} />
           <h3>By:{book.author}</h3>
         <h3>{book.description}</h3>
-        <button><a target={book.buy} params={book.buy}></a>Redirect:</button>
+        
           <div className="button-container">
             <button className="edit-button">
               <Link className="edit-link" to={`/book/${book.id}/edit`}>Edit</Link>

@@ -27,32 +27,35 @@ export default class Login extends Component {
         handleLogin(this.state);
   
       }}>
-        
+        <div className='login'>
         <h3>Login</h3>
         <label>
-          Username:
+         
           <input
             type="text"
-            name="username"
+              name="username"
+              placeholder='Username'
             value={username}
             onChange={this.handleChange}
           />
         </label>
         <br />
         <label>
-          Password:
+         
           <input
             type="password"
-            name="password"
+              name="password"
+              placeholder='Password'
             value={password}
             onChange={this.handleChange}
           />
         </label>
         <br />
      
-          <Link to='/register'>Register</Link>
+          <Link className='reg' to='/register'>Register</Link>
 
-        <button>Submit</button>
+          <button className='sub'>Submit</button>
+          </div>
       </form>
 
     )

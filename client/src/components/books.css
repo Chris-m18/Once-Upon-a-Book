@@ -1,0 +1,36 @@
+.edit-button{
+  background-color: rgb(195, 27, 27);
+  border: none;
+  color: black;
+  padding: 3px 10px;
+  border-radius: 20%;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  opacity: 0.1;
+  transition: 0.3s;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.delete-button{
+  background-color: rgb(195, 27, 27);
+  border: none;
+  color: black;
+  padding: 3px 10px;
+  border-radius: 20%;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  opacity: 0.1;
+  transition: 0.3s;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.button-container{
+  display: flex;
+  justify-content: center;
+}

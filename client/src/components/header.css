@@ -16,7 +16,31 @@
 
 }
 
-.login{
-  
+.head{
   text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.log{
+  text-decoration: none;
+  font-family: 'Amatic SC', cursive;
+  color: black;
+  font-weight: bold;
+}
+
+
+.cat{
+  text-decoration: none;
+  font-family: 'Amatic SC', cursive;
+  color: black;
+  font-weight: bold;
+}
+
+
+.add{
+  text-decoration: none;
+  font-family: 'Amatic SC', cursive;
+  color: black;
+  font-weight: bold;
 }

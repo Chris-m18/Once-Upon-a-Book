@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { withRouter } from 'react-router'
+import './update.css'
 
 class Update extends Component {
   state = {
@@ -47,55 +48,64 @@ class Update extends Component {
          handleUpdate(id, this.state);
         history.push('/');
       }}>
+        <div className='update'>
         <h3>Edit</h3>
         <label>
-          Title:
+          
           <input
             type='text' 
             name='title'
+            placeholder='Title'
             value={this.state.title}
             onChange={this.handleChange}
           />
         </label>
         <label>
-          Author:
+       
           <input
             type='text'
             name='author'
+            placeholder='Author'
             value={this.state.author}
             onChange={this.handleChange}
           />
         </label>
         <label>
-        Description:
+        
           <input
             type='text'
             name='description'
+            placeholder='Description'
             value={this.state.description}
             onChange={this.handleChange}
           />
         </label>
         <label>
-          Image:
+         
           <input
             type='text'
             name='img_url'
+            placeholder=' Image'
             value={this.state.img_url}
             onChange={this.handleChange}
           />
         </label>
         <label>
-          Age:
+          
           <input
             type='text'
             name='age'
+            placeholder='Age'
             value={this.state.age}
             onChange={this.handleChange}
           />
         </label>
-        <button>Submit</button>
+          <button>Submit</button>
+          </div>
       </form>
+        
     )
+  
   }
 }
 export default  withRouter (Update)

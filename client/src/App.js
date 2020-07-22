@@ -97,6 +97,7 @@ class App extends Component {
             handleDelete={this.handleDelete}
             books={this.state.books}
             handleUpdate={this.handleUpdate}
+            handleRegister={this.handleRegister}
             />
         </Route>
 

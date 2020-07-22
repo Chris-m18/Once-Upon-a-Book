@@ -1,18 +1,21 @@
 
 
-.book {
-  display: flex;
+.books {
+  display:flex;
+  justify-content: space-evenly;
   flex-wrap: wrap;
-  padding: 5px;
-  justify-content: space-evenly
+  padding-top: 2em;
+  padding-bottom: 2em;
+ 
+
+  
 
 }
 
 .pic{
   width: 300px;
   height: 300px;
-
-
+ padding: 2em;
 }
 
 h3{

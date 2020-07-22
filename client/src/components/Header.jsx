@@ -6,7 +6,7 @@ export default function Header() {
   return (<>
     <div className="header">
       
-      <Link to = './' > 
+      <Link to = '/' > 
     <header>Once Upon a Book </header>
       </Link>
     </div>
